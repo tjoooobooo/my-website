@@ -1,16 +1,20 @@
 <template>
-  <header>
-    <nav class="fixed top-0 left-0 bg-white w-full shadow">
+  <header class="sticky w-screen">
+    <nav class="bg-white w-screen shadow">
       <div
-        class="container m-auto flex justify-between items-center text-gray-700"
+        class="flex justify-between items-center text-gray-700"
       >
-        <h1 class="pl-4 py-4 text-xl font-bold">Thomas Schwabauer</h1>
+        <p class="pl-4 py-4 text-xl font-bold">Thomas Schwabauer</p>
         <ul
-          class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer"
+          class="hidden md:flex center pr-10 text-base font-semibold cursor-pointer"
         >
-          <li class="hover:bg-gray-200 py-4 px-6">Home</li>
+          <li class="hover:bg-gray-200 py-4 px-6">
+            <a href="#landing">Home</a>
+          </li>
           <li class="hover:bg-gray-200 py-4 px-6">Services</li>
-          <li class="hover:bg-gray-200 py-4 px-6">About me</li>
+          <li class="hover:bg-gray-200 py-4 px-6">
+            <a href="#page4">About me</a>
+          </li>
         </ul>
         <button
           class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group"
